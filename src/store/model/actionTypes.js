@@ -1,0 +1,40 @@
+/* car model */
+export const GET_CARS_MODEL = "GET_CARS_MODEL"
+export const GET_CARS_MODEL_SUCCESS = "GET_CARS_MODEL_SUCCESS"
+export const GET_CARS_MODEL_FAIL = "GET_CARS_MODEL_FAIL"
+
+/* car model by brand */
+export const GET_CARS_MODEL_BY_BRAND = "GET_CARS_MODEL_BY_BRAND"
+export const GET_CARS_MODEL_BY_BRAND_SUCCESS = "GET_CARS_MODEL_BY_BRAND_SUCCESS"
+export const GET_CARS_MODEL_BY_BRAND_FAIL = "GET_CARS_MODEL_BY_BRAND_FAIL"
+
+/* car model detail */
+export const GET_CAR_MODEL_DETAIL = "GET_CAR_MODEL_DETAIL"
+export const GET_CAR_MODEL_DETAIL_SUCCESS = "GET_CAR_MODEL_DETAIL_SUCCESS"
+export const GET_CAR_MODEL_DETAIL_FAIL = "GET_CAR_MODEL_DETAIL_FAIL"
+
+/**
+ * add car model
+ */
+export const ADD_NEW_CAR_MODEL = "ADD_NEW_CAR_MODEL"
+export const ADD_CAR_MODEL_SUCCESS = "ADD_CAR_MODEL_SUCCESS"
+export const ADD_CAR_MODEL_FAIL = "ADD_CAR_MODEL_FAIL"
+
+/**
+ * Edit car model
+ */
+export const UPDATE_CAR_MODEL = "UPDATE_CAR_MODEL"
+export const UPDATE_CAR_MODEL_SUCCESS = "UPDATE_CAR_MODEL_SUCCESS"
+export const UPDATE_CAR_MODEL_FAIL = "UPDATE_CAR_MODEL_FAIL"
+
+/**
+ * Delete car model
+ */
+export const DELETE_CAR_MODEL = "DELETE_CAR_MODEL"
+export const DELETE_CAR_MODEL_SUCCESS = "DELETE_CAR_MODEL_SUCCESS"
+export const DELETE_CAR_MODEL_FAIL = "DELETE_CAR_MODEL_FAIL"
+
+/**
+ * reset car model
+ */
+export const RESET_CARS_MODEL = "RESET_CARS_MODEL"

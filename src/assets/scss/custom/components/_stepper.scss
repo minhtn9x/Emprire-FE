@@ -1,0 +1,135 @@
+.md-stepper-horizontal {
+  display: table;
+  width: 100%;
+  margin: 0 auto;
+
+  .md-step {
+    display: table-cell;
+    position: relative;
+    padding: 24px;
+
+    &:first-child .md-step-bar-left,
+    &:last-child .md-step-bar-right {
+      display: none;
+    }
+
+    .md-step-circle {
+      width: 30px;
+      height: 30px;
+      margin: 0 auto;
+      background-color: #eff2f7;
+      border-radius: 50%;
+      text-align: center;
+      line-height: 30px;
+      font-size: 16px;
+      font-weight: 600;
+      color: #ffffff;
+    }
+
+    &.active .md-step-circle {
+      background-color: #2c53d2;
+    }
+
+    &.active-cancel .md-step-circle {
+      background-color: #f65353;
+    }
+
+    &.green.active .md-step-circle {
+      background-color: #00ae4d;
+    }
+
+    &.orange.active .md-step-circle {
+      background-color: #2c53d2;
+    }
+
+    &.done .md-step-circle:before {
+      font-family: "FontAwesome";
+      font-weight: 100;
+      content: "\f00c";
+    }
+
+    &.done .md-step-circle *,
+    &.editable .md-step-circle * {
+      display: none;
+    }
+
+    &.editable .md-step-circle {
+      -moz-transform: scaleX(-1);
+      -o-transform: scaleX(-1);
+      -webkit-transform: scaleX(-1);
+      transform: scaleX(-1);
+
+      &:before {
+        font-family: "FontAwesome";
+        font-weight: 100;
+        content: "\f040";
+      }
+    }
+
+    .md-step-title {
+      margin-top: 16px;
+      font-size: 16px;
+      font-weight: 600;
+      text-align: center;
+      color: #eff2f7;
+    }
+
+    &.active .md-step-title {
+      font-weight: 600;
+      color: rgba(0, 0, 0, 0.87);
+    }
+
+    &.active-cancel .md-step-title {
+      font-weight: 600;
+      color: rgba(0, 0, 0, 0.87);
+    }
+
+    &.active.done .md-step-title,
+    &.active.editable .md-step-title {
+      font-weight: 600;
+    }
+
+    .md-step-optional {
+      font-size: 12px;
+      text-align: center;
+      color: rgba(0, 0, 0, 0.26);
+    }
+
+    &.active .md-step-optional {
+      color: rgba(0, 0, 0, 0.54);
+    }
+
+    &.active-cancel .md-step-optional {
+      color: rgba(0, 0, 0, 0.54);
+    }
+
+    .md-step-bar-left,
+    .md-step-bar-right {
+      position: absolute;
+      top: 36px;
+      height: 1px;
+      border-top: 1px solid #dddddd;
+    }
+
+    .md-step-bar-right {
+      right: 0;
+      left: 50%;
+      margin-left: 20px;
+    }
+
+    .md-step-bar-left {
+      left: 0;
+      right: 50%;
+      margin-right: 20px;
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  .count-order {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
+}
